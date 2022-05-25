@@ -3,6 +3,10 @@ test_tup2 = (5, 6, 7, 5)
 def multiply(a, b):
         return a * b
         
+def original_code(list_object, modifier=1.1):
+	bb = (x * modifier for x in list_object)
+	return bb
+        
 q = lambda a, b: map(multiply, a, b)
 
 if __name__ == '__main__':
